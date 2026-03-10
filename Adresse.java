@@ -8,11 +8,18 @@ public class Adresse {
 
     public Adresse(){}
 
-    public Adresse(String plz, String hausnummer, String stadt,String strasse){
+    public Adresse(String plz, String hausnummer, String stadt, String strasse){
         this.plz = plz;
         this.stadt = stadt;
         this.hausnummer = hausnummer;
         this.strasse = strasse;
+    }
+
+    public String getAdresse(){
+        String anschriftOO = plz + " " + stadt + " " + strasse + " " + hausnummer;
+        return anschriftOO;
+
+       // System.out.println(plz + " " + stadt + " " + strasse + " " + hausnummer);
     }
 
 }

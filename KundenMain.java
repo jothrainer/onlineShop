@@ -2,10 +2,12 @@ package htl.swp2.system_out.OOP.onlineShop.onlineShop;
 
 public class KundenMain {
     public static void main(String[] args) {
-        Kunden k1 = new Kunden("Johannes", "Thrainer", "Hurensohnstraße bei Mario");
-        Kunden k2 = new Kunden("Hund", "e", "sohn");
+        Adresse a_k1 = new Adresse("6330", "31", "Kufstein", "Schopperweg");
+        Kunden k1 = new Kunden("Johannes", "Thrainer", a_k1);
         k1.kundenProfilAnzeigen();
-        k2.kundenProfilAnzeigen();
+
+       Kunden k4 = new Kunden("Simon", "Schober");
+        
 
 
     }
